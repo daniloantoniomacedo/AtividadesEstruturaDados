@@ -1,2 +1,2 @@
 # AtividadesEstruturaDados
-Resolução das listas de exercício da disciplina estrutura de dados.
+Resolução das atividades da disciplina estrutura de dados.
