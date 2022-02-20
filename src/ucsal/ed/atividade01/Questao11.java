@@ -1,11 +1,11 @@
-package ucsal.ed.lista01;
+package ucsal.ed.atividade01;
 
 import java.util.Scanner;
 import java.util.stream.Stream;
 
-import ucsal.ed.lista01.utils.Constantes;
-import ucsal.ed.lista01.utils.Nota;
-import ucsal.ed.lista01.utils.Utils;
+import ucsal.ed.atividade01.interfaces.Nota;
+import ucsal.ed.atividade01.utils.Constantes;
+import ucsal.ed.atividade01.utils.Utils;
 
 /**
  * Escrever um programa que leia o nome de um aluno e as notas das três provas que ele

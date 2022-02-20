@@ -1,10 +1,10 @@
-package ucsal.ed.lista01;
+package ucsal.ed.atividade01;
 
 import java.util.Scanner;
 
-import ucsal.ed.lista01.enums.OperacoesEnum;
-import ucsal.ed.lista01.utils.Constantes;
-import ucsal.ed.lista01.utils.Utils;
+import ucsal.ed.atividade01.enums.OperacoesEnum;
+import ucsal.ed.atividade01.utils.Constantes;
+import ucsal.ed.atividade01.utils.Utils;
 
 /**
  * Crie uma classe java em que o usuário informe dois números e a operação que deve

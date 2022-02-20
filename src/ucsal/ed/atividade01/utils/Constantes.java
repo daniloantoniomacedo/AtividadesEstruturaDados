@@ -1,6 +1,6 @@
-package ucsal.ed.lista01.utils;
+package ucsal.ed.atividade01.utils;
 
-public class Constantes {
+public abstract class Constantes {
 	
 	public static final String COMANDO_01 = "Digite o primeiro valor: ";
 	public static final String COMANDO_02 = "Digite o segundo valor: ";

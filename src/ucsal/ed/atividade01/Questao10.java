@@ -1,8 +1,8 @@
-package ucsal.ed.lista01;
+package ucsal.ed.atividade01;
 
 import java.util.stream.Stream;
 
-import ucsal.ed.lista01.utils.Primo;
+import ucsal.ed.atividade01.interfaces.Primo;
 
 /**
  * Faça um programa que exiba os números primos de 1 até 50.

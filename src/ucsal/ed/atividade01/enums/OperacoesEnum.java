@@ -1,11 +1,11 @@
-package ucsal.ed.lista01.enums;
+package ucsal.ed.atividade01.enums;
 
 import java.util.List;
 import java.util.Objects;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-import ucsal.ed.lista01.utils.Constantes;
+import ucsal.ed.atividade01.utils.Constantes;
 
 public enum OperacoesEnum {
 	

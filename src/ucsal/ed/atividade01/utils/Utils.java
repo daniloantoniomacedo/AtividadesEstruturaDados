@@ -1,9 +1,9 @@
-package ucsal.ed.lista01.utils;
+package ucsal.ed.atividade01.utils;
 
-public class Utils {
+public abstract class Utils {
 	
 	public static void imprimirMsgTela(String msg) {
-		System.out.println(msg );
+		System.out.println(msg);
 	}
 		
 	public static void imprimirFormatado(String msg, Object... resultado) {

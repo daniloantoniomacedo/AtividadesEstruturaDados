@@ -1,15 +1,15 @@
-package ucsal.ed.lista01;
+package ucsal.ed.atividade01;
 
 import java.util.Scanner;
 
-import ucsal.ed.lista01.utils.Constantes;
-import ucsal.ed.lista01.utils.Utils;
+import ucsal.ed.atividade01.utils.Constantes;
+import ucsal.ed.atividade01.utils.Utils;
 
 /**
- * Crie uma classe java que contenha um método que receba dois números inteiros e 
- * imprima o maior entre eles.
+ * Crie uma classe java que contenha um método que receba dois números e indique se
+ * são iguais ou se são diferentes. Mostre o maior e o menor (nesta sequência).
  */
-public class Questao01 {
+public class Questao02 {
 	
 	public static void main(String[] args) {
 		
@@ -38,11 +38,13 @@ public class Questao01 {
 		if(n1 == n2) {
 			Utils.imprimirMsgTela(Constantes.VALORES_IGUAIS);
 			System.exit(0);
-		} 
+		} else {
+			Utils.imprimirMsgTela(Constantes.VALORES_DIFERENTES);
+		}
 	}
 	
 	private static int obterMaiorValor(int n1, int n2) {
 		return n1 > n2 ? n1 : n2;
 	}
-
+	
 }

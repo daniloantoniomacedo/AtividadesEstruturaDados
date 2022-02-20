@@ -1,4 +1,4 @@
-package ucsal.ed.lista01;
+package ucsal.ed.atividade01;
 
 import java.util.stream.Stream;
 
