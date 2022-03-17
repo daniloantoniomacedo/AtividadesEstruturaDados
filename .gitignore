@@ -1,6 +1,7 @@
 # Folders
 .settings/
 bin/
+target/
 
 # keys
 id_rsa.pub
