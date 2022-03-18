@@ -4,50 +4,6 @@ import ucsal.ed.atividade05.interfaces.Lista;
 
 public class ListaEncadeada<T> implements Lista<T>{
 	
-	private static class Celula<T> { //inner class 
-		
-		private T valor;
-		
-		private Celula<T> proximo;
-
-		public Celula(T valor) {
-			super();
-			this.valor = valor;
-			this.proximo = null;
-		}
-
-		public Celula(T valor, Celula<T> proximo) {
-			super();
-			this.valor = valor;
-			this.proximo = proximo;
-		}
-
-		public T getValor() {
-			return valor;
-		}
-
-		public void setValor(T valor) {
-			this.valor = valor;
-		}
-
-		public Celula<T> getProximo() {
-			return proximo;
-		}
-
-		public void setProximo(Celula<T> proximo) {
-			this.proximo = proximo;
-		}
-
-		@Override
-		public String toString() {
-			return "Celula [valor=" + valor + ", endereco_memoria=" + this.hashCode() + ", proximo=" + proximo +"]";
-		}
-
-		
-		
-		
-	}
-	
 	private Celula<T> inicio;
 	
 	private int tamanho;
