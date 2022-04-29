@@ -24,8 +24,14 @@ public class Main {
 			
 			System.out.println(lista);
 			
+			lista.remove(prof3);
+			
+			System.out.println(lista);
+			
+			System.out.println(lista.getElementAt(1));
+			
 		} catch (NotFoundException e) {
-			System.out.println("Index out of bounds");
+			e.printStackTrace();
 		}
 	}
 

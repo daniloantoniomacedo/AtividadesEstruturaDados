@@ -51,11 +51,10 @@ public class LinkedList<T> implements List<T> {
 	public T getElementAt(int index) throws NotFoundException {
 		if(index >= 0 && index <= this.length) {
 			Node<T> currentNode = this.head;
-			for(int i = 0; i < index; i++) {
-				if(i == index) {
-					return currentNode.getContent();
-				}
+			for(int i = 0; i < index && Objects.nonNull(currentNode); i++) {
+				currentNode = currentNode.getNext();
 			}
+			return Objects.isNull(currentNode) ? null : currentNode.getContent();
 		}
 		throw new NotFoundException();
 	}
@@ -63,11 +62,7 @@ public class LinkedList<T> implements List<T> {
 	@Override
 	public void remove(T t) throws NotFoundException {
 		int index = indexOf(t);
-		Node<T> beforeNode = getNodeAt(index - 1);
-		Node<T> currentNode = beforeNode.getNext();
-		beforeNode.setNext(currentNode.getNext());
-		
-		length--;
+		removeAt(index);
 		
 	}
 
@@ -87,13 +82,11 @@ public class LinkedList<T> implements List<T> {
 	@Override
 	public int indexOf(T t) throws NotFoundException {
 		Node<T> currentNode = this.head;
-		int count = 0;
-		while(Objects.nonNull(currentNode.getNext())) {
+		for(int i = 0; i < this.length && Objects.nonNull(currentNode); i++) {
 			if(currentNode.getContent().equals(t)) {
-				return count;
+				return i;
 			}
 			currentNode = currentNode.getNext();
-			count++;
 		}
 		throw new NotFoundException();
 	}
@@ -133,7 +126,7 @@ public class LinkedList<T> implements List<T> {
 	}
 	
 	void verifyIndex(int index) throws NotFoundException {
-		if(index < 0 || index >= this.length) {
+		if(index < 0 || index > this.length) {
 			throw new NotFoundException();
 		}
 	}
